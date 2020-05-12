@@ -21,5 +21,5 @@
 # Compiler and Linker flags
 xrt project properties > C/C++ Build > Settings > V++ compiler/linker > Miscellaneous
 
-# Open Vivado project 
+# [Vivado] Hw layout 
 Xilinx > Vivado integration > open vivado project
