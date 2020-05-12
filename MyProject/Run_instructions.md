@@ -23,3 +23,6 @@ xrt project properties > C/C++ Build > Settings > V++ compiler/linker > Miscella
 
 # [Vitis-Vivado] Hw layout 
 Xilinx > Vivado integration > open vivado project
+
+# [Vivado] Block Design
+IP INTEGRATOR >  Open Block Desgin
