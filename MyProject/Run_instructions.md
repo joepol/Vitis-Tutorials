@@ -18,6 +18,11 @@
 - Connect to board [Putty]
 - `/mnt` run `.exe` file with `.xclbin` file as parameter. 
 
+# [Vitis] Build host and FPGA binary
+add host cpp and H files, Kernel files. 
+in the project `.prj` settings add `Hardware Functions`. 
+press on the project settings file. build `Emulation-HW`, then `build Hardware`
+
 # [Vitis] Compiler and Linker flags
 xrt project properties > C/C++ Build > Settings > V++ compiler/linker > Miscellaneous
 
@@ -26,3 +31,4 @@ Xilinx > Vivado integration > open vivado project
 
 # [Vivado] Block Design
 IP INTEGRATOR >  Open Block Desgin
+
