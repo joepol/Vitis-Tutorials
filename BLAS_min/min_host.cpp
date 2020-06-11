@@ -79,7 +79,7 @@ int main(int argc, char* argv[]) {
 //        // Data will be migrated to kernel space
 //        auto start_all = std::chrono::high_resolution_clock::now();
 //
-		cl::Event write_event;
+	cl::Event write_event;
         q.enqueueMigrateMemObjects({buffer_in},0, nullptr, &write_event/* 0 means from host*/);
 //
         std::vector<cl::Event> iteration_events{write_event};
