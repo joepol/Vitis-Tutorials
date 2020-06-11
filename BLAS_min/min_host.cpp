@@ -88,13 +88,13 @@ int main(int argc, char* argv[]) {
 //
         cl::Event task_event;
 //
-		q.enqueueTask(minKernel, &iteration_events, &task_event);
+	q.enqueueTask(minKernel, &iteration_events, &task_event);
 //
-		task_events.push_back(task_event);
+	task_events.push_back(task_event);
 //
-		iteration_events.insert(iteration_events.end(), task_events.begin(), task_events.end());
+	iteration_events.insert(iteration_events.end(), task_events.begin(), task_events.end());
 //
-		cl::Event read_event;
+	cl::Event read_event;
 //
 //        //time measurement for migrating data from DDR to host memory
         auto start = std::chrono::high_resolution_clock::now();
